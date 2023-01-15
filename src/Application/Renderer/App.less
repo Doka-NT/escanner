@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #0959d0;
+  --secondary-color: #6b778c;
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  color: var(--secondary-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+  cursor: pointer;
+
+  &--quiet {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+}
+
+.content {
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.switch {
+  zoom: 0.7;
+}
+
+.window-drag-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  user-select: none;
+  -webkit-app-region: drag;
+  z-index: 9999;
+}
