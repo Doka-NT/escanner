@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
     packagerConfig: {
         icon: path.join(__dirname, 'static', 'appIconColored'),
-        executableName: 'myapp',
+        executableName: 'escanner',
     },
     plugins: [
         ['@electron-forge/plugin-webpack', {
@@ -24,7 +24,7 @@ module.exports = {
         {
             name: '@electron-forge/maker-dmg',
             config: {
-                name: "myapp",
+                name: "escanner",
                 background: path.join(__dirname, 'static', 'dmgBackground.jpg'),
                 icon: path.join(__dirname, 'static', 'appIconColored.png'),
                 iconSize: 128,
@@ -33,7 +33,7 @@ module.exports = {
         {
             name: '@electron-forge/maker-squirrel',
             config: {
-                name: 'myapp',
+                name: 'escanner',
                 icon: path.join(__dirname, 'static', 'appIconColored.ico'),
                 loadingGif: path.join(__dirname, 'static', 'spinner.gif'),
                 setupIcon: path.join(__dirname, 'static', 'appIconColored.ico'),
@@ -44,12 +44,12 @@ module.exports = {
             config: {
                 options: {
                     maintainer: 'Soshnikov Artem',
-                    homepage: 'https://github.com/Doka-NT/myapp',
+                    homepage: 'https://github.com/Doka-NT/escanner',
                     categories: ['Utility'],
                     section: ['utils', 'javascript'],
-                    genericName: 'myapp',
+                    genericName: 'escanner',
                     icon: path.join(__dirname, 'static', 'appIconColored.png'),
-                    productName: 'myapp',
+                    productName: 'escanner',
                     productDescription: "This app will help you with\n - Watch through your last viewed JIRA issues\n - Track time in 1-2 clicks. Optionally provide a comment\n - Schedule notifications to keep worklog actual",
                 }
             }
@@ -59,12 +59,12 @@ module.exports = {
             config: {
                 options: {
                     maintainer: 'Soshnikov Artem',
-                    homepage: 'https://github.com/Doka-NT/myapp',
+                    homepage: 'https://github.com/Doka-NT/escanner',
                     categories: ['Utility'],
-                    genericName: 'myapp',
+                    genericName: 'escanner',
                     description: "App to simplify work with worklogs in JIRA",
                     icon: path.join(__dirname, 'static', 'appIconColored.png'),
-                    productName: 'myapp',
+                    productName: 'escanner',
                     productDescription: "This app will help you with\n - Watch through your last viewed JIRA issues\n - Track time in 1-2 clicks. Optionally provide a comment\n - Schedule notifications to keep worklog actual",
                 }
             }
@@ -79,7 +79,7 @@ module.exports = {
         config: {
           repository: {
             owner: 'Doka-NT',
-            name: 'myapp'
+            name: 'escanner'
           },
           prerelease: false
         }

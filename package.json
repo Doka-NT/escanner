@@ -1,11 +1,11 @@
 {
-  "name": "myapp",
-  "productName": "myapp",
+  "name": "escanner",
+  "productName": "escanner",
   "version": "1.0.0",
   "description": "Tool for easily search and add worklog to JIRA issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Doka-NT/myapp.git"
+    "url": "https://github.com/Doka-NT/escanner.git"
   },
   "main": ".webpack/main",
   "scripts": {

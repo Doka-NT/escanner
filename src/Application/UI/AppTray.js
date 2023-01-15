@@ -48,7 +48,7 @@ class AppTray {
   _createContextMenu() {
     const menuItems = [
       About.makeMenuItem('', {
-        icon: 'https://github.com/Doka-NT/myapp/raw/main/static/appIconColored.png',
+        icon: 'https://github.com/Doka-NT/escanner/raw/main/static/appIconColored.png',
         appName: pkg.productName,
         version: `Version ${pkg.version}`,
         copyright: `© ${pkg.author.name}`,
@@ -56,7 +56,7 @@ class AppTray {
       {
         label: 'Help',
         click: () => {
-          new OpenInShellHandler().handle({ payload: 'https://github.com/Doka-NT/myapp' });
+          new OpenInShellHandler().handle({ payload: 'https://github.com/Doka-NT/escanner' });
         },
       },
       { label: 'Quit', click: () => app.quit() },

@@ -5,7 +5,7 @@ export default function SlideBegin() {
   return (
     <CarouselItem>
       <div className="slide slide-1">
-        <div className="title">myapp</div>
+        <div className="title">escanner</div>
         <div className="content">
           <div className="row">
             <Icon className="icon" icon="fa-tasks" />

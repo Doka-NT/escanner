@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 import AbstractIntervalTask from '../AbstractIntervalTask';
 import config from '../../../app.config.main';
 
-const repositoryName = 'Doka-NT/myapp';
+const repositoryName = 'Doka-NT/escanner';
 const githubHost = 'https://github.com';
 const updaterHost = 'https://update.electronjs.org';
 const releasePage = 'releases/latest';
@@ -36,7 +36,7 @@ class CheckForUpdatesTask extends AbstractIntervalTask {
       cancelId: 1,
       title: 'Application Update',
       icon: path.join(config.assetsDir, 'appIconColored.png'),
-      detail: 'A new version of myapp is available. Do you want to download it now?',
+      detail: 'A new version of escanner is available. Do you want to download it now?',
     };
 
     dialog.showMessageBox(dialogOpts).then(({ response }) => {
