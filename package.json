@@ -75,6 +75,7 @@
     "electron-store": "^8.0.1",
     "electron-traywindow-positioner": "^1.1.0",
     "node-fetch": "^2.6.1",
+    "node-wifi": "^2.0.16",
     "object-hash": "^2.2.0",
     "onsenui": "^2.11.2",
     "path-browserify": "^1.0.1",

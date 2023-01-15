@@ -12,7 +12,6 @@ class EventDict {
 
   static SHOW_MAIN_WINDOW = 'show-main-window'
 
-  static RELOAD_ISSUES = 'reload-issues'
 
   static SYNC_IS_WINDOW_VISIBLE = 'sync-is-window-visible'
 
@@ -23,6 +22,8 @@ class EventDict {
   static SYNC_IS_DEV = 'sync-is-dev'
 
   static RESTORE_WINDOW_POSITION = 'restore-window-position'
+
+  static START_SCAN = 'start-scan'
 }
 
 export default EventDict;

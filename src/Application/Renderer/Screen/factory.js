@@ -1,5 +1,6 @@
 import ScreenDict from './ScreenDict';
 import WelcomeScreen from './WelcomeScreen/WelcomeScreen';
+import ScanScreen from './ScanSreen/ScanScreen';
 
 export default function createScreen(screenName) {
   let screen;
@@ -9,7 +10,7 @@ export default function createScreen(screenName) {
       screen = <WelcomeScreen />;
       break;
     default:
-      screen = <WelcomeScreen />;
+      screen = <ScanScreen />;
   }
 
   return screen;

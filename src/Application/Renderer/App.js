@@ -8,14 +8,8 @@ import { selectScreenName } from './Store/appSlice';
 import { selectIsOnboardingPassed } from './Store/settingsSlice';
 
 export default function App() {
-  const screenName = useSelector(selectScreenName);
-  const isOnboardingPassed = useSelector(selectIsOnboardingPassed);
 
-  const initialScreen = !isOnboardingPassed
-    ? ScreenDict.WELCOME
-    : ScreenDict.CHECK_TOKEN;
-
-  const screen = createScreen(screenName || initialScreen);
+  const screen = createScreen(ScreenDict.SCAN);
 
   return (
     <div>
