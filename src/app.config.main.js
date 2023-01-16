@@ -17,6 +17,7 @@ import SyncIsDevHandler from './Application/Event/RendererHandler/SyncIsDevHandl
 import SetAgentEnabledHandler from './Application/Event/RendererHandler/SetAgentEnabledHandler';
 import RestoreWindowPositionHandler from './Application/Event/RendererHandler/RestoreWindowPositionHandler';
 import StartScanHandler from './Application/Event/RendererHandler/StartScanHandler';
+import StopScanHandler from './Application/Event/RendererHandler/StopScanHandler';
 
 const APP_ROOT = app.getAppPath();
 
@@ -72,6 +73,9 @@ export default {
       //
       [EventDict.START_SCAN]: [
         new StartScanHandler(),
+      ],
+      [EventDict.STOP_SCAN]: [
+        new StopScanHandler(),
       ],
     },
   },
