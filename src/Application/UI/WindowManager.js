@@ -10,11 +10,6 @@ class WindowManager {
   static __instance
 
   /**
-   * @private {AppTray}
-   */
-  static __tray
-
-  /**
    * @private {MainWindow}
    */
   static __mainWindow
@@ -30,24 +25,12 @@ class WindowManager {
     return WindowManager.__instance;
   }
 
-  createTray() {
-    const appTray = new AppTray(this);
-
-    appTray.setHandlers(appTray);
-
-    WindowManager.__tray = appTray;
-  }
-
-  getTray() {
-    return WindowManager.__tray;
-  }
-
   createMainWindow() {
     const mainWindow = new MainWindow(this, {
-      width: 300,
-      height: 450,
+      width: 800,
+      height: 480,
       show: false,
-      frame: false,
+      frame: true,
       fullscreenable: false,
       resizable: false,
       transparent: false,

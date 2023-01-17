@@ -5,7 +5,6 @@ export default class AppReadyHandler extends AbstractHandler {
   handle(event) {
     const wm = WindowManager.getInstance();
 
-    wm.createTray();
     wm.createMainWindow();
 
     // todo: replace with events
